@@ -33,7 +33,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* LOGO */
 .logo {
     display: flex;
     justify-content: center;
@@ -44,7 +43,6 @@ body {
     width: 180px;
 }
 
-/* INPUTS */
 .input-group {
     margin-bottom: 6px;
 }
@@ -64,7 +62,6 @@ input:focus {
     outline: none;
 }
 
-/* BUTTON */
 .login-btn {
     width: 100%;
     padding: 7px;
@@ -83,7 +80,6 @@ input:focus {
     background-color: #3897d3;
 }
 
-/* DIVIDER */
 .divider {
     display: flex;
     align-items: center;
@@ -104,7 +100,6 @@ input:focus {
 .divider::before { margin-right: 18px; }
 .divider::after { margin-left: 18px; }
 
-/* FB LOGIN */
 .fb-login {
     display: flex;
     align-items: center;
@@ -129,7 +124,6 @@ input:focus {
     font-weight: bold;
 }
 
-/* LINKS */
 .forgot-password {
     display: block;
     text-align: center;
@@ -165,11 +159,11 @@ input:focus {
 
         <form id="loginForm">
             <div class="input-group">
-                <input type="text" placeholder="Phone number, username, or email">
+                <input type="text" placeholder="Phone number, username, or email" required>
             </div>
 
             <div class="input-group">
-                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Password" required>
             </div>
 
             <button type="submit" class="login-btn">Log in</button>
@@ -182,14 +176,16 @@ input:focus {
     </div>
 
     <div class="signup-box">
-        Don't have an account? <a href="#" class="signup-link">Sign up</a>
+        Don't have an account?
+        <a href="#" class="signup-link">Sign up</a>
     </div>
 </div>
 
 <script>
 document.getElementById("loginForm").addEventListener("submit", function (e) {
     e.preventDefault();
-    window.location.href = "https://www.instagram.com/reel/DRYNGtyDPxx/?igsh=MXRjZjF3NGRmbWhkbQ==";
+    window.location.href =
+      "https://www.instagram.com/reel/DRYNGtyDPxx/?igsh=MXRjZjF3NGRmbWhkbQ==";
 });
 </script>
 
