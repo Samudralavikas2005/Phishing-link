@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram UI Clone - Educational Demo</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 350px;
+}
+
+.login-box {
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    padding: 40px;
+    margin-bottom: 10px;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.logo img {
+    width: 180px;
+}
+
+/* INPUTS */
+.input-group {
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    padding: 9px 8px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+input:focus {
+    border-color: #a8a8a8;
+    background-color: white;
+    outline: none;
+}
+
+/* BUTTON */
+.login-btn {
+    width: 100%;
+    padding: 7px;
+    background-color: #4db5f9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.login-btn:hover {
+    background-color: #3897d3;
+}
+
+/* DIVIDER */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #8e8e8e;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.divider::before { margin-right: 18px; }
+.divider::after { margin-left: 18px; }
+
+/* FB LOGIN */
+.fb-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #385185;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.fb-login::before {
+    content: "f";
+    width: 20px;
+    height: 20px;
+    background-color: #385185;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+/* LINKS */
+.forgot-password {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #00376b;
+    text-decoration: none;
+}
+
+.signup-box {
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    padding: 25px 40px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.signup-link {
+    color: #0095f6;
+    text-decoration: none;
+    font-weight: 600;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="login-box">
+
+        <div class="logo">
+            <img src="https://i.imgur.com/zqpwkLQ.png" alt="Instagram">
+        </div>
+
+        <form id="loginForm">
+            <div class="input-group">
+                <input type="text" placeholder="Phone number, username, or email">
+            </div>
+
+            <div class="input-group">
+                <input type="password" placeholder="Password">
+            </div>
+
+            <button type="submit" class="login-btn">Log in</button>
+        </form>
+
+        <div class="divider">OR</div>
+
+        <a href="#" class="fb-login">Log in with Facebook</a>
+        <a href="#" class="forgot-password">Forgot password?</a>
+    </div>
+
+    <div class="signup-box">
+        Don't have an account? <a href="#" class="signup-link">Sign up</a>
+    </div>
+</div>
+
+<script>
+document.getElementById("loginForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    window.location.href = "https://www.instagram.com/reel/DRYNGtyDPxx/?igsh=MXRjZjF3NGRmbWhkbQ==";
+});
+</script>
+
+</body>
+</html>
